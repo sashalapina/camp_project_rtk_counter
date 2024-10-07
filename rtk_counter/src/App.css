@@ -1,42 +1,75 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+body {
+  background-color: #222222;
+  color: #ebebeb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 125%;
   text-align: center;
+  font-family: 'Jost';
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.counter-container {
+  background-color: #1F1F1F;
+  border-radius: 10px;
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: calc(100vh / 4.5);
+  box-shadow:
+    0 0 4px #1E1E1E,
+    0 0 8px rgba(30, 30, 30, 0.7),
+    0 0 12px rgba(30, 30, 30, 0.5),
+    0 0 16px rgba(30, 30, 30, 0.3);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+h1 {
+  display: inline-block;
+  position: relative;
+  margin: 0 0 40px;
+  color: #ebebeb;
+  text-shadow: 0 0 1px #ebebeb, 0 0 3px rgba(235, 235, 235, 0.6),
+    0 0 4px rgba(235, 235, 235, 0.4), 0 0 5px rgba(235, 235, 235, 0.3);
+  transition: text-shadow 0.3s ease-in-out;
 }
 
-.card {
-  padding: 2em;
+h1.animate-up {
+  color: #ebebeb;
+  text-shadow: 0 0 2px #A8D88C,
+    0 0 5px rgba(168, 216, 140, 0.6),
+    0 0 7px rgba(168, 216, 140, 0.4),
+    0 0 10px rgba(168, 216, 140, 0.3);
 }
 
-.read-the-docs {
-  color: #888;
+h1.animate-down {
+  color: #ebebeb;
+  text-shadow: 0 0 2px #FF6B6B,
+    0 0 5px rgba(255, 107, 107, 0.6),
+    0 0 7px rgba(255, 107, 107, 0.4),
+    0 0 10px rgba(255, 107, 107, 0.3);
+}
+
+.counter-btns-container {
+  display: flex;
+  gap: 20px;
+}
+
+button {
+  width: 100px;
+  background-color: #ebebeb;
+  color: #1F1F1F;
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+  font-family: 'Jost';
+  text-transform: uppercase;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 0 1px #ebebeb, 0 0 3px rgba(235, 235, 235, 0.6),
+    0 0 4px rgba(235, 235, 235, 0.4), 0 0 5px rgba(235, 235, 235, 0.3);
 }
